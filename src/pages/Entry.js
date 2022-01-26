@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SignUpForm from "../components/SignUpForm";
 
 export default function Entry() {
   const [name, setName] = useState();
@@ -16,57 +17,38 @@ export default function Entry() {
   };
 
   return (
-    <div>
-      <header className="h-fit p-16 flex border-2 justify-around py-16 flex-row">
-        <div className="w-2/6 flex flex-col justify-evenly border-2">
-          <h1 className="w-1/2 self-center">Big Digital World</h1>
-          <h2 className="w-1/2 self-center">Meetup 2021</h2>
-          <p className="w-1/2 self-center">
+    <div className="bg-slate-50">
+      <header className="h-fit p-16 flex justify-evenly py-16 flex-row bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <div
+          className="w-2/6 flex flex-col justify-center text-slate-100"
+          style={{ textShadow: "1px 1px 2px black" }}
+        >
+          <h1 className="py-2 text-5xl text-cyan-500 font-bold">
+            Big Digital World
+          </h1>
+          <h2 className="py-2 text-4xl font-bold">Meetup 2021</h2>
+          <p className="w-1/2 py-2">
             I'm baby everyday carry YOLO adaptogen bicycle rights hoodie, neutra
             letterpress selvage listicle knausgaard chambray pour-over.
           </p>
         </div>
-        <div className="flex flex-col border-2 w-2/6 py-16 justify-around">
-          <h4 className="self-center">Register Yourself</h4>
-          <h3 className="self-center">Reserve Your Seat</h3>
-          <form className="flex flex-col justify-evenly border-2 m-auto p-12 w-1/2">
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={handleName}
-            />
-            <input
-              type="text"
-              placeholder="Your Phone No"
-              value={phone}
-              onChange={handlePhone}
-            />
-            <input
-              type="text"
-              placeholder="Your Email"
-              value={email}
-              onChange={handleEmail}
-            />
-            <button type="submit" onClick={handleSubmit}>
-              Register Now
-            </button>
-          </form>
+        <div className="w-1/6">
+          <SignUpForm />
         </div>
       </header>
-      <main className="px-72">
-        <div className="cardLeftPic">
-          <div className="image">
-            <div className="meetupInfo">
-              <div className="infoLeft">
+      <main className="px-72 mt-12">
+        <div className="cardLeftPic my-12 justify-between flex">
+          <div className="image w-4/5 mx-12 px-8 py-4 flex-col bg-slate-200 rounded-2xl">
+            <div className="meetupInfo flex h-16 bg-slate-100 justify-evenly translate-y-36 translate-x-12 rounded-2xl">
+              <div className="infoLeft w-1/2 justify-start p-4">
                 <h5>Where</h5>
               </div>
-              <div className="infoRight">
+              <div className="infoRight w-1/2 justify-start p-4">
                 <h5>When</h5>
               </div>
             </div>
           </div>
-          <div className="cardText">
+          <div className="cardText w-4/5 mx-12 px-8 py-4">
             <h5>The Meetup</h5>
             <h3>About the event</h3>
             <span>divider</span>
@@ -78,8 +60,8 @@ export default function Entry() {
             <button>Join Us</button>
           </div>
         </div>
-        <div className="cardRightPic">
-          <div className="cardText">
+        <div className="cardRightPic justify-between my-12 flex">
+          <div className="cardText mx-12 w-4/5 px-8 py-4">
             <h5>About Us</h5>
             <h3>What We're Doing</h3>
             <span>divider</span>
@@ -91,11 +73,13 @@ export default function Entry() {
             </p>
             <button>Join Us</button>
           </div>
-          <div className="doubleImage"></div>
+          <div className="doubleImage mx-12 w-4/5 px-8 py-4">
+            <p className="bg-slate-200 h-full rounded-2xl">image</p>
+          </div>
         </div>
-        <div className="cardLeftPic">
-          <div className="image"></div>
-          <div className="cardText">
+        <div className="cardLeftPic justify-between my-12 flex">
+          <div className="image w-4/5 px-8 py-4 mx-12 flex-col bg-slate-200 rounded-2xl"></div>
+          <div className="cardText w-4/5 mx-12 px-8 py-4">
             <h5>The Meetup</h5>
             <h3>About the event</h3>
             <span>divider</span>
@@ -108,24 +92,34 @@ export default function Entry() {
             <button>Join Us</button>
           </div>
         </div>
-        <footer>
-          <h5>Follow Us On</h5>
-          <ul>
-            <li>
-              <a href="#">Slack Icon</a>
-            </li>
-            <li>
-              <a href="#">Insta Icon</a>
-            </li>
-            <li>
-              <a href="#">Facebook Icon</a>
-            </li>
-            <li>
-              <a href="#">LinkedIn Icon</a>
-            </li>
-          </ul>
-        </footer>
       </main>
+      <footer className="flex h-36 bg-blue-400 w-full">
+        <h5 className="w-1/2 self-center text-center text-white">
+          Follow Us On
+        </h5>
+        <ul className="flex w-1/2 justify-center self-center">
+          <li>
+            <a href="#" className="text-white">
+              Slack Icon
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Insta Icon
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              Facebook Icon
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-white">
+              LinkedIn Icon
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
