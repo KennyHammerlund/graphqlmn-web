@@ -17,6 +17,8 @@ export default function Entry() {
     console.log(submission);
   };
 
+  // bg-main-header
+
   return (
     <div className="bg-slate-50">
       <header className="h-fit w-full p-16 flex justify-evenly py-16 flex-row bg-gradient-to-r from-violet-500 to-fuchsia-500">
@@ -43,9 +45,9 @@ export default function Entry() {
         </div>
       </header>
       <main className="px-72">
-        <div className="cardLeftPic my-36 justify-between flex">
+        <div className="cardLeftPic my-36 flex">
           <div className="image shadow-lg w-4/5 px-8 py-4 mx-12 flex-col bg-slate-200 rounded-2xl">
-            <div className="meetupInfo flex h-24 bg-slate-100 justify-evenly translate-y-64 translate-x-12 rounded-2xl shadow-lg">
+            <div className="meetupInfo flex h-24 bg-slate-100 translate-y-64 translate-x-12 rounded-2xl shadow-lg">
               <div className="infoLeft w-1/2 justify-start p-4">
                 <h5>Where</h5>
               </div>
