@@ -10,7 +10,7 @@ export default function SignUpForm({
   handleSubmit,
 }) {
   return (
-    <div className="bg-white shadow sm:rounded-lg py-6 px-2">
+    <div className="bg-white shadow-2xl sm:rounded-lg py-6 px-2">
       <div className="text-center">
         <h4 className="self-center text-cyan-500">Register Yourself</h4>
         <h3 className="self-center text-pink-500 text-xl uppercase">
