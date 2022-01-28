@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "main-header": "url('/assets/images/gql.jpg')",
+        "main-header": "url('../assets/images/gql.jpg')",
       },
     },
   },

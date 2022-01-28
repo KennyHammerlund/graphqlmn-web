@@ -10,10 +10,10 @@ import {
 export default function Footer() {
   return (
     <footer className="flex h-36 bg-blue-400 w-full justify-end">
-      <h5 className="w-1/6 self-center text-center font-extrabold text-2xl text-white">
+      <h5 className="w-2/6 self-center text-center font-extrabold text-2xl text-white">
         Follow Us On
       </h5>
-      <ul className="flex w-1/6 justify-evenly self-center">
+      <ul className="flex w-2/6 justify-evenly self-center">
         <li>
           <a href="#" className="text-white">
             <FontAwesomeIcon icon={faSlack} size="3x" />
