@@ -32,12 +32,11 @@ export default function Entry() {
           style={{ textShadow: "1px 1px 2px black" }}
         >
           <h1 className="py-2 text-5xl text-cyan-500 font-bold">
-            Big Digital World
+            GraphQL MN
           </h1>
-          <h2 className="py-2 text-4xl font-bold">Meetup 2022</h2>
+          <h2 className="py-2 text-4xl font-bold">Community Colaboration</h2>
           <p className="w-1/2 py-2">
-            I'm baby everyday carry YOLO adaptogen bicycle rights hoodie, neutra
-            letterpress selvage listicle knausgaard chambray pour-over.
+            Welcome to GraphQL MN. We are a gr
           </p>
         </div>
         <div className="w-1/6">
