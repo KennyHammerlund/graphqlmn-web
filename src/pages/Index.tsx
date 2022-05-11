@@ -12,7 +12,7 @@ const Homepage = () => {
         height: "100vh",
         justifyContent: "center",
         alignItems: "center",
-        background: "#183b64",
+        background: "linear-gradient(0,#78be42, #173a64)",
       }}
     >
       <div
@@ -34,7 +34,7 @@ const Homepage = () => {
         <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mt-8">
           <span className="block">Ready to dive in?</span>
         </h2>
-        <a href="mailto:kenny.hammerlund@gmail.com" className="text-blue-600">
+        <a href="mailto:admin@graphqlmn.com" className="text-blue-600">
           Send us an email to join
         </a>
         <div>{/* <MailchimpSignup /> */}</div>
