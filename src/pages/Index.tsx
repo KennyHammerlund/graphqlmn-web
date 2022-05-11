@@ -1,6 +1,5 @@
 import React from "react";
 import LOGO from "../assets/images/circle_logo.svg";
-import { MailchimpSignup } from "../components/MailchimpForm";
 
 // const url =
 const Homepage = () => {
